@@ -297,8 +297,6 @@ margin-bottom: 13px;
     text-decoration: line-through;
 }
 
-/* VERSIÓN MOBILE */
-
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1100px) {
@@ -341,6 +339,10 @@ margin-bottom: 13px;
         display: block;
     }
 
+    i.fa-times {
+        display: none;
+    }
+
     .collapsible-menu {
         background: #0000EC;
         padding: 0px 15px;
@@ -381,9 +383,14 @@ margin-bottom: 13px;
         display: none;
     }
 
-    input:checked +label {
-        background-image: url(close.png);
+    input:checked +label i.fa-bars {
+        display: none;
     }
+    input:checked +label i.fa-times {
+        display: block;
+    }
+
+
 
     .menu-content {
         max-height: 0;
@@ -392,8 +399,8 @@ margin-bottom: 13px;
     }
 
     /* Toggle Effect */
-    input:checked ~ label {
-        background-image: url(close.png);
+    input:checked ~ label i.fa-times {
+        display: block;
     }
     input:checked ~ .menu-content {
         max-height: 100%;
