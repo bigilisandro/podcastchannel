@@ -142,6 +142,7 @@
 .iframes {
     width:584px;
     height: 232px;
+    
 }
 
 /* Sección de donde venimos */
@@ -459,7 +460,6 @@ margin-bottom: 13px;
 
    .titulo-margin-left-mobile {
        margin-left: 16px;
-       padding-top: -20px;
    }
 
    .padding {
