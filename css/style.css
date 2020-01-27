@@ -553,7 +553,20 @@ margin-bottom: 90px;
 }
 
 .nav-item2 {
-    margin-right: -10px;
+    padding-right: 25px;
 
 }
+}
+
+@media only screen and (max-width: 320px) {
+    .texto-mobile3 {
+        font-size: 14px;    
+    }
+    .nav-item2 {
+        padding-right: 20px;
+    }
+
+    .titulo-mobile1 {
+        font-size: 40px;
+    }
 }
